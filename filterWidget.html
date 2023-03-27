@@ -1,171 +1,176 @@
-<body>
-        <form id="filter-homes" class="filter-form show-small">
-                <select id="statusDropDown" name="status">
-                        <option value="-1">Status</option>
-                        <option value="0">Featured</option>
-                        <option value="1">For Sale</option>
-                        <option value="2">Under Construction</option>
-                        <option value="3">Under Contract</option>
-                        <option value="4">Pending</option>
-                        <option value="5">Sold</option>
-                </select>
-                <select id="minDropDown" name="min-price">
-                        <option selected="" value="-1">Min Price</option>
-                        <option value="0">$0</option>
-                        <option value="50000">$50,000</option>
-                        <option value="100000">$100,000</option>
-                        <option value="150000">$150,000</option>
-                        <option value="200000">$200,000</option>
-                        <option value="250000">$250,000</option>
-                        <option value="300000">$300,000</option>
-                        <option value="350000">$350,000</option>
-                        <option value="400000">$400,000</option>
-                        <option value="500000">$500,000</option>
-                        <option value="750000">$750,000</option>
-                        <option value="1000000">$1,000,000</option>
-                </select>
-                <select id="maxDropDown" name="max-price">
-                        <option selected="" value="999999999">Max Price</option>
-                        <option value="100000">$100,000</option>
-                        <option value="150000">$150,000</option>
-                        <option value="200000">$200,000</option>
-                        <option value="250000">$250,000</option>
-                        <option value="300000">$300,000</option>
-                        <option value="350000">$350,000</option>
-                        <option value="400000">$400,000</option>
-                        <option value="500000">$500,000</option>
-                        <option value="750000">$750,000</option>
-                        <option value="1000000">$1,000,000</option>
-                        <option value="99999999">No Maximum</option>
-                </select>
-                <select id="minSizeDropDown" name="min-size">
-                        <option selected="" value="-1">Min Size</option>
-                        <option value="0">0 ft²</option>
-                        <option value="1000">1000 ft²</option>
-                        <option value="1500">1500 ft²</option>
-                        <option value="2000">2000 ft²</option>
-                        <option value="2500">2500 ft²</option>
-                        <option value="3000">3000 ft²</option>
-                        <option value="3500">3500 ft²</option>
-                        <option value="4000">4000 ft²</option>
-                        <option value="4500">4500 ft²</option>
-                        <option value="5000">5000 ft²</option>
-                </select>
-                <select id="maxSizeDropDown" name="max-size">
-                        <option selected="" value="999999">Max Size</option>
-                        <option value="1000">1000 ft²</option>
-                        <option value="1500">1500 ft²</option>
-                        <option value="2000">2000 ft²</option>
-                        <option value="2500">2500 ft²</option>
-                        <option value="3000">3000 ft²</option>
-                        <option value="3500">3500 ft²</option>
-                        <option value="4000">4000 ft²</option>
-                        <option value="4500">4500 ft²</option>
-                        <option value="5000">5000 ft²</option>
-                        <option value="99999">No Maximum</option>
-                </select>
-                <br class="hide-large">
-                <select id="bedDropDown" name="beds">
-                        <option selected="" value="-1">Beds</option>
-                        <option value="1">1+</option>
-                        <option value="2">2+</option>
-                        <option value="3">3+</option>
-                        <option value="4">4+</option>
-                        <option value="5">5+</option>
-                        <option value="6">6+</option>
-                        <option value="7">7+</option>
-                        <option value="8">8+</option>
-                        <option value="9">9+</option>
-                </select>
-                <select id="bathDropDown" name="baths">
-                        <option selected="" value="-1">Baths</option>
-                        <option value="1">1+</option>
-                        <option value="2">2+</option>
-                        <option value="3">3+</option>
-                        <option value="4">4+</option>
-                        <option value="5">5+</option>
-                        <option value="6">6+</option>
-                        <option value="7">7+</option>
-                        <option value="8">8+</option>
-                        <option value="9">9+</option>
-                </select>
-                <select id="garageDropDown" name="garages">
-                        <option selected="" value="-1">Garages</option>
-                        <option value="1">1+</option>
-                        <option value="2">2+</option>
-                        <option value="3">3+</option>
-                        <option value="4">4+</option>
-                        <option value="5">5+</option>
-                        <option value="6">6+</option>
-                        <option value="7">7+</option>
-                        <option value="8">8+</option>
-                        <option value="9">9+</option>
-                </select>
+<form id="filter-homes" class="filter-form show-small">
+    
+<select name="Status" id="status-select">
+    <option value="-1">Status</option>
+    <option value="Featured">Featured</option>
+    <option value="For Sale">For Sale</option>
+    <option value="Under Construction">Under Construction</option>
+    <option value="Under Contract">Under Contract</option>
+    <option value="Pending">Pending</option>
+    <option value="Sold">Sold</option>
+</select>
 
-                <select id="commDropDown" name="community">
-                        <option selected="" value="-1">Community</option>
-                        <option value="867">Chapel Acres</option>
-                        <option value="2162">Fountain View/Las Colinas</option>
-                        <option value="2153">Mustang Park</option>
-                        <option value="866">Sendera Lakes</option>
-                        <option value="865">St. James</option>
-                        <option value="2157">Vintage Creek</option>
-                        <option value="1156">Windstone</option>
-                </select>
-                <select id="planDropDown" name="plan">
-                        <option selected="" value="-1">Floor Plan</option>
-                        <option value="1740">Aspen</option>
-                        <option value="1123">Bella</option>
-                        <option value="2969">Belmont</option>
-                        <option value="3146">Berkley</option>
-                        <option value="3135">Birch</option>
-                        <option value="2882">Bradford</option>
-                        <option value="3298">Breckenridge</option>
-                        <option value="3084">Cambridge</option>
-                        <option value="2932">Camden</option>
-                        <option value="3140">Cedar</option>
-                        <option value="3153">Charleston</option>
-                        <option value="2923">Cottonwood</option>
-                        <option value="1742">Cypress</option>
-                        <option value="2876">Dogwood</option>
-                        <option value="1744">Elm</option>
-                        <option value="3007">Essex</option>
-                        <option value="1412">Franco</option>
-                        <option value="1413">Franklin</option>
-                        <option value="1128">Glade</option>
-                        <option value="893">Hailey</option>
-                        <option value="3359">Hampton</option>
-                        <option value="905">Heyworth</option>
-                        <option value="3158">Hickory</option>
-                        <option value="897">Jackson</option>
-                        <option value="1737">Jefferson</option>
-                        <option value="810">Kimball Craftsman</option>
-                        <option value="3073">Kimball Modern</option>
-                        <option value="2921">Kimball Traditional</option>
-                        <option value="2550">Lakewood</option>
-                        <option value="1414">Lopez</option>
-                        <option value="900">Louie</option>
-                        <option value="3789">Madison</option>
-                        <option value="986">Magnolia</option>
-                        <option value="3110">Maple</option>
-                        <option value="910">Monroe</option>
-                        <option value="3097">Newport</option>
-                        <option value="1410">Nuccio</option>
-                        <option value="3163">Oak</option>
-                        <option value="2940">Oxford</option>
-                        <option value="3101">Pine</option>
-                        <option value="3078">Redwood</option>
-                        <option value="1126">Sandplum</option>
-                        <option value="1771">Silver Leaf</option>
-                        <option value="3238">Spruce</option>
-                        <option value="3118">Telluride</option>
-                        <option value="1154">Washington</option>
-                        <option value="2501">Willow</option>
-                </select>
-                <br>
-                <button onclick="filter()" class="btn btn-primary btn-filter"><i class="fa fa-filter"></i>Filter</button>
-                <button onclick="reset()" id="reset" class="btn btn-default btn-filter"><i class="fa fa-repeat"></i>Reset</button>
-        </form>
+<select name="Min Price" id="minPrice-select">
+    <option value="-1000">Min Price</option>
+    <option value="0">$0</option>
+    <option value="50000">$50,000</option>
+    <option value="100000">$100,000</option>
+    <option value="150000">$150,000</option>
+    <option value="200000">$200,000</option>
+    <option value="250000">$250,000</option>
+    <option value="300000">$300,000</option>
+    <option value="350000">$350,000</option>
+    <option value="400000">$400,000</option>
+    <option value="500000">$500,000</option>
+    <option value="750000">$750,000</option>
+    <option value="1000000">$1,000,000</option>
+</select>
 
-        <script src="scripts.js"></script>
-</body>
+<select name="Max Price" id="maxPrice-select">
+    <option value="999999999">Max Price</option>
+    <option value="100000">$100,000</option>
+    <option value="150000">$150,000</option>
+    <option value="200000">$200,000</option>
+    <option value="250000">$250,000</option>
+    <option value="300000">$300,000</option>
+    <option value="350000">$350,000</option>
+    <option value="400000">$400,000</option>
+    <option value="500000">$500,000</option>
+    <option value="750000">$750,000</option>
+    <option value="1000000">$1,000,000</option>
+    <option value="999999999">No Max</option>
+</select>
+
+<!--sup tags does not work ing select tags &sup1, &sup2, &sup3 for 1, 2, 3-->
+<select name="Min Size" id="minSize-select">
+    <option value="-1000">Min Size</option>
+    <option value="0">0 ft&sup2</option>
+    <option value="1000">1000 ft&sup2</option>
+    <option value="1500">1500 ft&sup2</option>
+    <option value="2000">2000 ft&sup2</option>
+    <option value="2500">2500 ft&sup2</option>
+    <option value="3000">3000 ft&sup2</option>
+    <option value="3500">3500 ft&sup2</option>
+    <option value="4000">4000 ft&sup2</option>
+    <option value="4500">4500 ft&sup2</option>
+    <option value="5000">5000 ft&sup2</option>
+</select>
+
+<select name="Max Size" id="maxSize-select">
+    <option value="999999999">Max Size</option>
+    <option value="1000">1000 ft&sup2</option>
+    <option value="1500">1500 ft&sup2</option>
+    <option value="2000">2000 ft&sup2</option>
+    <option value="2500">2500 ft&sup2</option>
+    <option value="3000">3000 ft&sup2</option>
+    <option value="3500">3500 ft&sup2</option>
+    <option value="4000">4000 ft&sup2</option>
+    <option value="4500">4500 ft&sup2</option>
+    <option value="5000">5000 ft&sup2</option>
+    <option value="999999999">No Max</option>
+</select>
+
+<select name="Beds" id="beds-select">
+    <option value="-1000">Beds</option>
+    <option value="1">1+</option>
+    <option value="2">2+</option>
+    <option value="3">3+</option>
+    <option value="4">4+</option>
+    <option value="5">5+</option>
+    <option value="6">6+</option>
+    <option value="7">7+</option>
+    <option value="8">8+</option>
+    <option value="9">9+</option>
+</select>
+
+<select name="Baths" id="baths-select">
+    <option value="-1000">Baths</option>
+    <option value="1">1+</option>
+    <option value="2">2+</option>
+    <option value="3">3+</option>
+    <option value="4">4+</option>
+    <option value="5">5+</option>
+    <option value="6">6+</option>
+    <option value="7">7+</option>
+    <option value="8">8+</option>
+    <option value="9">9+</option>
+</select>
+
+<select name="Garages" id="garages-select">
+    <option value="-1000">Garages</option>
+    <option value="1">1+</option>
+    <option value="2">2+</option>
+    <option value="3">3+</option>
+    <option value="4">4+</option>
+    <option value="5">5+</option>
+    <option value="6">6+</option>
+    <option value="7">7+</option>
+    <option value="8">8+</option>
+    <option value="9">9+</option>
+</select>
+
+<select name="Community" id="community-select">
+    <option value="-1">Community</option>
+    <option value="Chapel Acres">Chapel Acres</option>
+    <option value="Fountain View/Las Colinas">Fountain View/Las Colinas</option>
+    <option value="Mustang Park">Mustang Park</option>
+    <option value="Sendera Lakes">Sendera Lakes</option>
+    <option value="St. James">St. James</option>
+    <option value="Vintage Creek">Vintage Creek</option>
+    <option value="Windstone">Windstone</option>
+</select>
+
+<select name="Floor Plan" id="floorPlan-select">
+	<option value="-1">Floor Plan</option>
+    <option value="1740">Aspen</option>
+	<option value="1123">Bella</option>
+	<option value="2969">Belmont</option>
+	<option value="3146">Berkley</option>
+	<option value="3135">Birch</option>
+	<option value="2882">Bradford</option>
+	<option value="3298">Breckenridge</option>
+	<option value="3084">Cambridge</option>
+	<option value="2932">Camden</option>
+	<option value="3140">Cedar</option>
+	<option value="3153">Charleston</option>
+	<option value="2923">Cottonwood</option>
+	<option value="1742">Cypress</option>
+	<option value="2876">Dogwood</option>
+	<option value="1744">Elm</option>
+	<option value="3007">Essex</option>
+	<option value="1412">Franco</option>
+	<option value="1413">Franklin</option>
+	<option value="1128">Glade</option>
+	<option value="893">Hailey</option>
+	<option value="3359">Hampton</option>
+	<option value="905">Heyworth</option>
+	<option value="3158">Hickory</option>
+	<option value="897">Jackson</option>
+	<option value="1737">Jefferson</option>
+	<option value="810">Kimball Craftsman</option>
+	<option value="3073">Kimball Modern</option>
+	<option value="2921">Kimball Traditional</option>
+	<option value="2550">Lakewood</option>
+	<option value="1414">Lopez</option>
+	<option value="900">Louie</option>
+	<option value="3789">Madison</option>
+	<option value="986">Magnolia</option>
+	<option value="3110">Maple</option>
+	<option value="910">Monroe</option>
+	<option value="3097">Newport</option>
+	<option value="1410">Nuccio</option>
+	<option value="3163">Oak</option>
+	<option value="2940">Oxford</option>
+	<option value="3101">Pine</option>
+	<option value="3078">Redwood</option>
+	<option value="1126">Sandplum</option>
+	<option value="1771">Silver Leaf</option>
+	<option value="3238">Spruce</option>
+	<option value="3118">Telluride</option>
+	<option value="1154">Washington</option>
+	<option value="2501">Willow</option>
+</select>
+</form>
+
+<button type="button" class="Filterbtn" id="Filterbtn">Filter</button>
+<div id="img_list">img_list xxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>

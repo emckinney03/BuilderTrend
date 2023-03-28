@@ -1,49 +1,49 @@
 <form id="filter-homes" class="filter-form show-small">
     
 <select name="Status" id="status-select">
-    <option value="">Status</option>
-    <option value="Featured">Featured</option>
-    <option value="For Sale">For Sale</option>
-    <option value="Under Construction">Under Construction</option>
-    <option value="Under Contract">Under Contract</option>
-    <option value="Pending">Pending</option>
-    <option value="Sold">Sold</option>
+    <option value="-1">Status</option>
+    <option value="1">Featured</option>
+    <option value="1">For Sale</option>
+    <option value="1">Under Construction</option>
+    <option value="1">Under Contract</option>
+    <option value="1">Pending</option>
+    <option value="1">Sold</option>
 </select>
 
 <select name="Min Price" id="minPrice-select">
-    <option value="Min Price">Min Price</option>
-    <option value="$0">$0</option>
-    <option value="$50,000">$50,000</option>
-    <option value="$100,000">$100,000</option>
-    <option value="$150,000">$150,000</option>
-    <option value="$200,000">$200,000</option>
-    <option value="$250,000">$250,000</option>
-    <option value="$300,000">$300,000</option>
-    <option value="$350,000">$350,000</option>
-    <option value="$400,000">$400,000</option>
-    <option value="$500,000">$500,000</option>
-    <option value="$750,000">$750,000</option>
-    <option value="$1,000,000">$1,000,000</option>
+    <option value="-1000">Min Price</option>
+    <option value="0">$0</option>
+    <option value="50000">$50,000</option>
+    <option value="100000">$100,000</option>
+    <option value="150000">$150,000</option>
+    <option value="200000">$200,000</option>
+    <option value="250000">$250,000</option>
+    <option value="300000">$300,000</option>
+    <option value="350000">$350,000</option>
+    <option value="400000">$400,000</option>
+    <option value="500000">$500,000</option>
+    <option value="750000">$750,000</option>
+    <option value="1000000">$1,000,000</option>
 </select>
 
 <select name="Max Price" id="maxPrice-select">
-    <option value="Max Price">Max Price</option>
-    <option value="$100,000">$100,000</option>
-    <option value="$150,000">$150,000</option>
-    <option value="$200,000">$200,000</option>
-    <option value="$250,000">$250,000</option>
-    <option value="$300,000">$300,000</option>
-    <option value="$350,000">$350,000</option>
-    <option value="$400,000">$400,000</option>
-    <option value="$500,000">$500,000</option>
-    <option value="$750,000">$750,000</option>
-    <option value="$1,000,000">$1,000,000</option>
-    <option value="No Max">No Max</option>
+    <option value="-1000">Max Price</option>
+    <option value="100000">$100,000</option>
+    <option value="150000">$150,000</option>
+    <option value="200000">$200,000</option>
+    <option value="250000">$250,000</option>
+    <option value="300000">$300,000</option>
+    <option value="350000">$350,000</option>
+    <option value="400000">$400,000</option>
+    <option value="500000">$500,000</option>
+    <option value="750000">$750,000</option>
+    <option value="1000000">$1,000,000</option>
+    <option value="999999999">No Max</option>
 </select>
 
 <!--sup tags does not work ing select tags &sup1, &sup2, &sup3 for 1, 2, 3-->
 <select name="Min Size" id="minSize-select">
-    <option value="Min Size">Min Size</option>
+    <option value="-1000">Min Size</option>
     <option value="0">0 ft&sup2</option>
     <option value="1000">1000 ft&sup2</option>
     <option value="1500">1500 ft&sup2</option>
@@ -53,11 +53,11 @@
     <option value="3500">3500 ft&sup2</option>
     <option value="4000">4000 ft&sup2</option>
     <option value="4500">4500 ft&sup2</option>
-    <option value="5000">5000 ft&sup2</option>
+    <option value="999999999">5000 ft&sup2</option>
 </select>
 
 <select name="Max Size" id="maxSize-select">
-    <option value="Max Size">Max Size</option>
+    <option value="-1000">Max Size</option>
     <option value="1000">1000 ft&sup2</option>
     <option value="1500">1500 ft&sup2</option>
     <option value="2000">2000 ft&sup2</option>
@@ -67,11 +67,11 @@
     <option value="4000">4000 ft&sup2</option>
     <option value="4500">4500 ft&sup2</option>
     <option value="5000">5000 ft&sup2</option>
-    <option value="No Max">No Max</option>
+    <option value="999999999">No Max</option>
 </select>
 
 <select name="Beds" id="beds-select">
-    <option value="Beds">Beds</option>
+    <option value="-1000">Beds</option>
     <option value="1">1+</option>
     <option value="2">2+</option>
     <option value="3">3+</option>
@@ -84,7 +84,7 @@
 </select>
 
 <select name="Baths" id="baths-select">
-    <option value="Baths">Baths</option>
+    <option value="-1000">Baths</option>
     <option value="1">1+</option>
     <option value="2">2+</option>
     <option value="3">3+</option>
@@ -97,7 +97,7 @@
 </select>
 
 <select name="Garages" id="garages-select">
-    <option value="Garages">Garages</option>
+    <option value="-1000">Garages</option>
     <option value="1">1+</option>
     <option value="2">2+</option>
     <option value="3">3+</option>
@@ -110,18 +110,18 @@
 </select>
 
 <select name="Community" id="community-select">
-    <option value="Community">Community</option>
-    <option value="Chapel Acres">Chapel Acres</option>
-    <option value="Fountain View/Las Colinas">Fountain View/Las Colinas</option>
-    <option value="Mustang Park">Mustang Park</option>
-    <option value="Sendera Lakes">Sendera Lakes</option>
-    <option value="St. James">St. James</option>
-    <option value="Vintage Creek">Vintage Creek</option>
-    <option value="Windstone">Windstone</option>
+    <option value="-1">Community</option>
+    <option value="1">Chapel Acres</option>
+    <option value="1">Fountain View/Las Colinas</option>
+    <option value="1">Mustang Park</option>
+    <option value="1">Sendera Lakes</option>
+    <option value="1">St. James</option>
+    <option value="1">Vintage Creek</option>
+    <option value="1">Windstone</option>
 </select>
 
 <select name="Floor Plan" id="floorPlan-select">
-	<option value="Floor Plan">Floor Plan</option>
+	<option value="-1">Floor Plan</option>
     <option value="1740">Aspen</option>
 	<option value="1123">Bella</option>
 	<option value="2969">Belmont</option>
@@ -173,3 +173,4 @@
 </form>
 
 <button type="button" class="Filterbtn" id="Filterbtn">Filter</button>
+<div id="img_list">img_list xxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>

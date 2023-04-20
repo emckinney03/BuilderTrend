@@ -1,0 +1,45 @@
+form {
+  position: relative;
+  width: 650px;
+  height: 150px;
+  margin: 0 auto;
+  padding: 1em;
+  box-sizing: border-box;
+
+  /* we create our grid */
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(5, 120px);
+  grid-template-rows: 3em 3em 3em 3em;
+}
+
+.Filterbtn {
+    background-color: red;
+    color: white;
+    margin-left: 50%;
+}
+
+.card {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 320px);
+    grid-template-rows: 21em 21em 21em 21em;
+}
+
+.img_list {
+    position: relative;
+}
+
+.card_body {
+    width: 18rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(12, 16, 32, 0.4);
+    margin: 20px 10px;
+}
+
+img {
+    float: left;
+    width:  18rem;
+    height: 200px;
+    object-fit: cover;
+}

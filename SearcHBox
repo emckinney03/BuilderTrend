@@ -1,0 +1,19 @@
+<form id="filter-homes" class="filter-form show-small">
+
+</form>
+
+   
+    <!-- input tag -->
+    <input id="searchbar" onkeyup="FilterCommunity" type="text"
+        name="search" placeholder="Find Your Dream Home">
+      
+    <!-- ordered list -->
+    <ol id='list'>
+         <li id="FilterCommunity">Brookfield Custom Homes</li>
+        
+    </ol>
+    
+    <button type="button" class="FilterBtn" id="FilterBtn">Search</button>
+    <button type="button" class="ResetBtn" id="ResetBtn">Reset</button>
+    <div id="img_list"></div>
+   

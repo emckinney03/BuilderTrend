@@ -1,3 +1,8 @@
+/**
+ * Description
+ * @param {any} "Filterbtn"
+ * @returns {any}
+ */
 
 //connect btn to options - DONE
 //need to connect this to collections api

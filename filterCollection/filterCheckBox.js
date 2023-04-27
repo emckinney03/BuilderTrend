@@ -1,3 +1,7 @@
+/**
+ * Description
+ * @returns {any}
+ */
 dmAPI.loadCollectionsAPI().then(api => {
     api.data("Filter")
     .get()
@@ -196,6 +200,11 @@ document.getElementById("FilterBtn").onclick = function () {
     })
 }
 
+/**
+ * Description
+ * @param {any} "ResetBtn"
+ * @returns {any}
+ */
 document.getElementById("ResetBtn").onclick = function () {
     document.getElementById("filter-homes").reset();
     //Empty out image list

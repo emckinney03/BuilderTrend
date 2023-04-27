@@ -1,4 +1,8 @@
 
+/**
+ * Description
+ * @returns {any}
+ */
 dmAPI.loadCollectionsAPI().then(api => {
         api.data("Filter")
         .get()

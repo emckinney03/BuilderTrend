@@ -1,3 +1,4 @@
+/** Filter Pagination */
 //From a filter collection
 const filterArray = [];
 //From the dataset collection - grabbed once

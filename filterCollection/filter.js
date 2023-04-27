@@ -1,3 +1,7 @@
+/**
+ * Description
+ * @returns {any}
+ */
 dmAPI.loadCollectionsAPI().then(api => {
     api.data("Filter")
     .get()
@@ -69,6 +73,11 @@ dmAPI.loadCollectionsAPI().then(api => {
 
 
     
+/**
+ * Description
+ * @param {any} "FilterBtn"
+ * @returns {any}
+ */
 document.getElementById("FilterBtn").onclick = function () {
     const filterArray = [];
     

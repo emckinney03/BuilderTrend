@@ -1,0 +1,2 @@
+- name: JSDoc Action
+  uses: andstor/jsdoc-action@v1.2.1
